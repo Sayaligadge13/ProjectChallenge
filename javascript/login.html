@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Login Demo</title>
+<script>
+function check()
+{
+var u=document.getElementById('textUser').value;
+var p=document.getElementById('textPass').value;
+if(u=="PROFOUND" && p=="PROFOUND@123")
+alert("Login successfull!");
+else
+alert("Invalid creadentials..");
+document.getElementById('textUser').value=' ';
+document.getElementById('textPass').value=' ';
+}
+</script>
+<style>
+table,td{
+border:1px solid black;
+}
+#textUser{
+background-color:yellow;
+}
+#textPass{
+background-color:pink;
+}
+#btn{
+background-color:green;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<td>UserName</td>
+<td>
+<input type="text"name="uname"id="textUser">
+</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>
+<input type="password"name="pass"id="textPass">
+</td>
+</tr>
+<tr>
+<td>
+<input type="button"value="Login"id="btn"onclick="check()">
+</td>
+<td>
+<input type="button"value="cancal"id="btn">
+</td>
+<tr>
+</table>
+</body>
+</html>

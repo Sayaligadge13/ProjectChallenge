@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+function add()
+{
+var a=parseInt(document.f.n1.value);
+var b=parseInt(document.f.n2.value);
+var c=a+b;
+document.f.res.value=c;
+}
+</script>
+</head>
+<body>
+<form name="f">
+<h1>Addition using Name attribute</h1>
+Enter 1st no:<input type="text" name="n1"><br>
+Enter 2nd no:<input type="text" name="n2"<br>
+Result:<input type="text" name="res"><br>
+<input type="button" value="Add" onclick ="add()">
+</form>
+</body>
+</html>
